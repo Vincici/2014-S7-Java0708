@@ -60,7 +60,7 @@ public class LoginServlet extends HttpServlet {
 			
 			
 			//执行查询语句
-			String sql = "select count(1) cnt from account where username=? and password=?";
+			String sql = "select id from account where username=? and password=?";
 			PreparedStatement ps = con.prepareStatement(sql);
 			
 			ps.setString(1, username);
@@ -69,11 +69,10 @@ public class LoginServlet extends HttpServlet {
 			ResultSet rs = ps.executeQuery();
 			//获取结果
 			if(rs.next()) {
-				int cnt = rs.getInt("cnt");
+				int id = rs.getInt("id");
 				//如果验证成功
-				if(cnt == 1) {
-					request.getSession().setAttribute("username", username);
-				}
+				request.getSession().setAttribute("user_id", id);
+				request.getSession().setAttribute("username", username);
 			}
 			
 			
