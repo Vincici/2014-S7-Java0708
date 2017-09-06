@@ -49,9 +49,9 @@ public class LogFilter implements Filter {
 		if(hsr.getSession().getAttribute("user_id") != null) {
 			user_id = (int)hsr.getSession().getAttribute("user_id");
 		}
-		//记录日志信息
-		String infoStr = "用户:"+username+",访问url:"+url;
-		
+		//璁板綍鏃ュ織淇℃伅
+		String infoStr = "鐢ㄦ埛:"+username+",璁块棶url:"+url;
+				
 		DbDao logDao = new LogDaoImpl();
 		Log log = new Log();
 		log.setDescription(infoStr);
