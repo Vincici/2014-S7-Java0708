@@ -21,7 +21,11 @@ ${student.name }
 <br/>
 ${student.batch }
 
-
+<hr />
+<form action="<%=request.getContextPath() %>/index/fileupload" method="post" enctype="multipart/form-data">
+	<input type="file" name="file" />
+	<input type="submit" value="submit" />
+</form>
 
 
 

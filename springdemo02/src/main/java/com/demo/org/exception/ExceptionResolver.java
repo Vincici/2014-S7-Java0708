@@ -14,7 +14,7 @@ public class ExceptionResolver implements HandlerExceptionResolver{
 	public ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response, Object handler,
 			Exception ex) {
 		// TODO Auto-generated method stub
-		
+		ex.printStackTrace();
 		ModelAndView modelAndView = new ModelAndView("errorPage");
 		return modelAndView;
 	}
