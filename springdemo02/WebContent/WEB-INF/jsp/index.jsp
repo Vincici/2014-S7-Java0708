@@ -4,10 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/css/all.css" type="text/css" />
 <title>Index</title>
 </head>
 <body>
-<h1 style="color:red">Index</h1>
+<h1>Index</h1>
 
 <a href="<%=request.getContextPath() %>/index/show?name=tom&batch=java">测试参数</a>
 
