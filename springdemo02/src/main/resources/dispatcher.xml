@@ -23,5 +23,11 @@
 	<!-- 异常统一处理 -->
 	<!-- <bean class="com.demo.org.exception.ExceptionResolver" /> -->
 	
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**"/>
+			<bean class="com.demo.org.interceptor.TestInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
 	
 </beans>
