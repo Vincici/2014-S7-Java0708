@@ -42,4 +42,11 @@ public class IndexController {
 		return "index";
 	}
 	
+	@RequestMapping("/exception")
+	public String showEx() throws Exception{
+		
+		throw new Exception("showEx");
+		//return "index";
+	}
+	
 }
