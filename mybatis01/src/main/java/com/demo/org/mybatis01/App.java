@@ -41,8 +41,17 @@ public class App
         IRoleDao ird = session.getMapper(IRoleDao.class);
         List<Role> roleList = ird.getAll();
         for(Role r : roleList) {
-        	System.out.println(r.getRolename());
+        	System.out.println(r.getRole_name());
         }
+        
+        Role role = new Role();
+        role.setDescription("test role");
+        role.setRole_name("TestRole");
+        
+        ird.insertRole(role);
+        
+        session.commit();
+        
         System.out.println("-------------------");
         //第三种映射方式 注解配置
         	//添加映射配置
