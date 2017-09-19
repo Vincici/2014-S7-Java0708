@@ -36,9 +36,22 @@ public class App
         	System.out.println(account.getUsername());
         }
         System.out.println("--------------------");
+        
+        List<Account> accountList2 = session.selectList("test.getAll2");
+        for(Account account:accountList2) {
+        	System.out.println(account.getUsername());
+        	if(account.getUlList() == null) {
+        		continue;
+        	}
+        	for(UserLog ul : account.getUlList()) {
+        		System.out.println("  "+ul.getDescription());
+        	}
+        }
+        
+        
         //第二种映射方式 接口映射
         
-        IRoleDao ird = session.getMapper(IRoleDao.class);
+        /*IRoleDao ird = session.getMapper(IRoleDao.class);
         List<Role> roleList = ird.getAll();
         for(Role r : roleList) {
         	System.out.println(r.getRole_name());
@@ -60,6 +73,6 @@ public class App
         List<UserLog> userLogList = iul.getAll();
         for(UserLog ul : userLogList) {
         	System.out.println(ul.getDescription());
-        }
+        }*/
     }
 }
