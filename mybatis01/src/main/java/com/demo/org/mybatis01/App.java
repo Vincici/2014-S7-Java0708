@@ -30,12 +30,12 @@ public class App
         
         
         //第一种映射方式 域名查找
-        List<Account> accountList = session.selectList("test.getAll");
+        /*List<Account> accountList = session.selectList("test.getAll");
         
         for(Account account:accountList) {
         	System.out.println(account.getUsername());
         }
-        System.out.println("--------------------");
+        System.out.println("--------------------");*/
         
         List<Account> accountList2 = session.selectList("test.getAll2");
         for(Account account:accountList2) {
