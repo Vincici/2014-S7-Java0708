@@ -5,4 +5,11 @@
 	<select id="getAll" resultType="com.demo.org.bean.Role">
 		select * from role
 	</select>
+	
+	<insert id="insertRole">
+		insert into role(role_name,description) values (#{role_name},#{description})
+	</insert>
+	
+	
+	
 </mapper>

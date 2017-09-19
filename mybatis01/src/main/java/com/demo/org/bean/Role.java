@@ -2,7 +2,7 @@ package com.demo.org.bean;
 
 public class Role {
 	private int id;
-	private String rolename;
+	private String role_name;
 	private String description;
 	public int getId() {
 		return id;
@@ -10,11 +10,12 @@ public class Role {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getRolename() {
-		return rolename;
+	
+	public String getRole_name() {
+		return role_name;
 	}
-	public void setRolename(String rolename) {
-		this.rolename = rolename;
+	public void setRole_name(String role_name) {
+		this.role_name = role_name;
 	}
 	public String getDescription() {
 		return description;
