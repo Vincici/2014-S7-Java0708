@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"  
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<!-- <context:annotation-config />
+	<context:component-scan base-package="com.*" />
+	
+	
+	<bean id="bc01" class="com.demo.org.bean.BeanClass01" scope="prototype"/>
+
+	<bean id="bcf" class="com.demo.org.bean.BeanClassFactory" />
+	
+	<bean id="fb" factory-bean="bcf" factory-method="getBeanClass01" />
+
+	<bean id="bc02" class="com.demo.org.bean.BeanClass02">
+		<property name="info" value="This is beanclass02 by property" />
+	
+		<constructor-arg name="info" value="this is bc02 by constructor" />
+	</bean>
+	
+	<bean id="bc0222" class="com.demo.org.bean.BeanClass02">
+		<property name="info" value="This is beanclass02 by property" />
+	
+		<constructor-arg name="info" value="this is bc02 by constructor" />
+	</bean>
+	
+	<bean id="bc003" class="com.demo.org.bean.BeanClass03" autowire="byType">
+	
+	</bean> -->
+
+</beans>
