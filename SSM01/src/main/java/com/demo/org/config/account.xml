@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.org.mapper.IAccountService">
+	<!-- <resultMap type="com.demo.org.bean.Account" id="testresult">
+		<result property="id" column="id" />
+		<result property="username" column="username" />
+		<result property="password" column="password" />
+		<collection property="ulList" column="id" select="test.getLog" fetchType="lazy"/>
+	</resultMap>
+
+	
+	<select id="getAll2" resultMap="testresult">
+		select * from account
+	</select>
+
+	<select id="getLog" resultType="com.demo.org.bean.UserLog">
+		select * from user_log where account_id = #{account_id}
+	</select> -->
+
+	<select id="getAll" resultType="com.demo.org.bean.Account">
+		select * from account
+	</select>
+	
+	
+	
+	
+</mapper>
