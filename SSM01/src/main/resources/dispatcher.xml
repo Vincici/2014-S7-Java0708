@@ -9,7 +9,7 @@
 	
 	<!-- 注解的驱动与配置 -->
 	<mvc:annotation-driven />
-	<context:component-scan base-package="com.*" />
+	<context:component-scan base-package="com.demo.org.*" />
 	<context:annotation-config />
 	
 	<!-- 定义静态资源 -->

@@ -9,5 +9,10 @@
 <body>
 	<h1 style="text-align:center;color:red">Index</h1>
 	<p>The Count : ${count } </p>
+	<p>
+		The account name:${account.username }
+		<br />
+		The account password:${account.password }
+	</p>
 </body>
 </html>
